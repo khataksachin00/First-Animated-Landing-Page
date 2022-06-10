@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -71,7 +72,7 @@ header{
     opacity: .6;
 }
 .logo{
-    display:block;
+    display: block;
     width: 8rem;
 }
 /*Main Content*/
@@ -83,7 +84,7 @@ position: relative;
 overflow: hidden;
 display: flex;
 align-items: center;
-z-index: -1;
+z-index: 1;
 }
 
 .landing-page::before{
@@ -108,7 +109,7 @@ z-index: -1;
 }
 
 .content-details{
-    max-width: 80
+    max-width: 80%
 
 }
 
@@ -223,7 +224,7 @@ z-index: -1;
 }
 
 /*Animation*/
-@keyframe move-up{
+@keyframes move-up{
     from{
         transform: translateY(0);
     }
@@ -232,7 +233,7 @@ z-index: -1;
     }
 }
 
-@keyframe move-down{
+@keyframes move-down{
     from{
         transform: translateY(0);
     }
@@ -241,7 +242,7 @@ z-index: -1;
     }
 }
 
-@keyframe hue-shift{
+@keyframes hue-shift{
     from{
         filter: hue-rotate(0);
     }
